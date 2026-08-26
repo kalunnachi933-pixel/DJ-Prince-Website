@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>DJ Prince | Official Website</title>
+<link rel="icon" type="image/png" href="DJ WEBSITE.png">
+<meta name="description" content="Official DJ Prince website featuring music, DJ mixes, events, gallery and entertainment.">
+
+
+    <style>.logo {
+    text-shadow: 0 0 10px #00ffff, 0 0 25px #00ffff;
+    letter-spacing: 5px;
+    animation: logoGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes logoGlow {
+    from {
+        text-shadow: 0 0 10px #00ffff;
+    }
+
+    to {
+        text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+    }
+}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background: #222;
+            padding: 30px;
+        }
+
+       header h1 {
+    font-size: 45px;
+    margin: 10px;
+}
+
+.logo {
+    text-shadow: 0 0 10px #00ffff, 0 0 25px #00ffff;
+    letter-spacing: 5px;
+}
+
+        nav {
+            background: #000;
+            padding: 15px;
+        }
+
+       nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    padding: 10px 18px;
+    font-weight: bold;
+    border: 2px solid #00ffff;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #00ffff;
+    color: #000;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+        nav a:hover {
+            color: #00ffff;
+        }
+.dj-photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #00ffff;
+    box-shadow: 0 0 25px #00ffff;
+}
+
+        .hero {
+             padding: 80px 20px;
+   background: linear-gradient(135deg, #0000ff, #8000ff, #0000ff);
+    background-size: 400% 400%;
+    animation: djBackground 8s ease infinite;
+}
+
+@keyframes djBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+        }
+
+        .hero h2 {
+            font-size: 40px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+      .button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #00ffff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+.button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px #00ffff;
+}
+
+        section {
+            padding: 50px 20px;
+        }
+
+       .card {
+    background: #222;
+    padding: 25px;
+    margin: 15px auto;
+    max-width: 500px;
+    border-radius: 15px;
+    border: 1px solid #00ffff;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+}
+
+
+        footer {
+            background: #000;
+            padding: 25px;
+        }
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+  nav a {
+    display: block;
+    margin: 6px auto;
+    width: 85%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+   .hero {
+    padding: 80px 20px;
+}
+background: linear-gradient(120deg, #111, #222, #111);
+background-size: 200% 200%;
+animation: heroBackground 8s ease infinite;
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .dj-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    section {
+        padding: 35px 15px;
+    }
+
+    .card {
+        width: 90%;
+        box-sizing: border-box;
+    }
+}
+.about-card {
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+.about-card h3 {
+    font-size: 28px;
+}
+.gallery-card {
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 20px #00ffff;
+}
+
+.gallery-photo {
+    width: 250px;
+    max-width: 90%;
+    border-radius: 20px;
+    border: 3px solid #ffffff;
+}
+.contact-card {
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 20px #00ffff;
+}
+
+.contact-card h3 {
+    font-size: 28px;
+}
+.equalizer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 6px;
+    height: 50px;
+    margin: 20px auto;
+}
+
+.equalizer span {
+    display: block;
+    width: 8px;
+    height: 20px;
+    background: #00ffff;
+    animation: equalizer 0.8s infinite alternate;
+}
+
+.equalizer span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.equalizer span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.equalizer span:nth-child(4) {
+    animation-delay: 0.1s;
+}
+
+.equalizer span:nth-child(5) {
+    animation-delay: 0.3s;
+}
+
+.equalizer span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+@keyframes equalizer {
+    from {
+        height: 15px;
+    }
+
+    to {
+        height: 50px;
+    }
+}
+.welcome-title {
+    animation: welcomeIn 1.5s ease-out;
+}
+
+@keyframes welcomeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#services {
+    background: #151515;
+}
+
+#services h2 {
+    font-size: 35px;
+}
+
+#services .card {
+    transition: 0.3s;
+}
+
+#services .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00ffff;
+}
+.announcement {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 20px;
+    border: 2px solid #00ffff;
+    border-radius: 25px;
+    font-weight: bold;
+    animation: announcementGlow 2s infinite alternate;
+}
+
+@keyframes announcementGlow {
+    from {
+        box-shadow: 0 0 5px #00ffff;
+    }
+
+    to {
+        box-shadow: 0 0 20px #00ffff;
+    }
+}
+audio {
+    width: 90%;
+    max-width: 450px;
+    margin-top: 15px;
+}
+.music-cover {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #00ffff;
+    box-shadow: 0 0 25px #00ffff;
+    margin: 20px auto;
+animation: musicSpin 8s linear infinite;
+animation: musicSpin 8s linear infinite;
+animation-play-state: paused;
+}
+@keyframes musicSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes heroBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+#achievements {
+    background: #111;
+}
+
+#achievements .card {
+    border: 2px solid #00ffff;
+    transition: 0.3s;
+}
+
+#achievements .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00ffff;
+}
+
+#achievements h3 {
+    font-size: 24px;
+}
+/* ACHIEVEMENTS SECTION */
+#achievements {
+    padding: 60px 20px;
+    text-align: center;
+    background: #111;
+}
+
+#achievements h2 {
+    font-size: 36px;
+    margin-bottom: 35px;
+    color: #ffcc00;
+}
+
+.achievement {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #222;
+    border: 1px solid #444;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.achievement:hover {
+    transform: translateY(-8px);
+    border-color: #ffcc00;
+}
+
+.achievement h3 {
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.achievement p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1 class="logo">🎧 DJ PRINCE 🎧</h1>
+    <p>Official Music & Entertainment Website</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+ <a href="#about">About</a>
+    <a href="#music">Music</a>
+<a href="#services">Services</a>
+<a href="#achievements">Achievements</a>
+<a href="#mission">Mission</a>
+<a href="#why">Why Choose Me</a>
+<a href="#faq">FAQ</a>
+<a href="#booking">Book DJ Prince</a>
+<a href="#gallery">Gallery</a>
+    <a href="#events">Events</a>
+<a href="#social">Social</a>
+    <a href="#contact">Contact</a>
+
+</nav>
+
+<section class="hero" id="home">
+
+    <img src="dj-prince.png.png"class="dj-photo">
+   <h2 class="welcome-title">WELCOME TO DJ PRINCE</h2>
+    <p>Music • Entertainment • Good Vibes</p>
+<p>Feel the rhythm. Enjoy the music. Experience the vibes.</p>
+<div class="announcement">
+    🚀 NEW DJ PRINCE MUSIC COMING SOON! 🎵
+</div>
+
+<a class="button" href="#music">🎵 LISTEN NOW</a>
+
+    <a class="button" href="#music">🎵 Explore Music</a>
+</section><section id="about">
+  <section id="about">
+    <h2>👑 About DJ Prince</h2>
+
+    <div class="card about-card">
+        <h3>🎧 Welcome to DJ Prince</h3>
+
+        <p>
+            Welcome to my official DJ website.
+            I love music, entertainment and creating good vibes.
+        </p>
+
+        <p>
+            Explore my music, view my gallery and
+            check out my upcoming events.
+        </p>
+
+        <p>🔥 Music • 🎵 Entertainment • ✨ Good Vibes</p>
+    </div>
+</section>
+
+<section id="music">
+    <h2>🎵 My Music</h2>
+<img src="dj-prince.png.png" class="music-cover" alt="DJ Prince">
+    <p>🎧 Choose a track and press Play</p>
+<div class="equalizer">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+    <div class="card">
+        <h3>🔥 Latest Mix</h3>
+      <h3>🎵 Afrobeat Mara Dance Khalipha</h3>
+
+<p>DJ Prince — Latest Mix</p>
+
+<audio controls onplay="startMusicSpin()" onpause="stopMusicSpin()">
+    <source src="Afrobeat Mara Dance Khalipha.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+</audio>
+    </div>
+
+ <div class="card">
+    <h3>🎶 DJ Spark — 2025 Best Afrobeats Party</h3>
+    <p>🔥 Afrobeats • Naija Afrosounds • Amapiano</p>
+
+    <audio controls onplay="startMusicSpin()" onpause="stopMusicSpin()">
+        <source src="DJ_Spark_-_2025_Best_Afrobeats_Party_Latest_Naija_Afrosounds_Amapiano_Mixtape.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+</div>
+</section><section id="gallery">
+    <section id="gallery">
+    <h2>📸 DJ Prince Gallery</h2>
+
+    <div class="card gallery-card">
+        <img src="DJ WEBSITE.png" class="gallery-photo">
+        <p>🎧 DJ Prince</p>
+<section id="services">
+    <h2>🎤 DJ Prince Services</h2>
+
+    <div class="card">
+        <h3>🎉 Birthday Parties</h3>
+        <p>Music and entertainment for birthday celebrations.</p>
+    </div>
+
+    <div class="card">
+        <h3>🎧 DJ Music Sessions</h3>
+        <p>Enjoy exciting DJ mixes and good vibes.</p>
+    </div>
+
+    <div class="card">
+        <h3>🎤 Special Events</h3>
+        <p>Music and entertainment for special occasions.</p>
+    </div>
+</section>
+<section id="achievements">
+    <h2>🏆 My Achievements</h2>
+
+    <div class="achievement">
+        <h3>🎧 DJ Performance</h3>
+        <p>Performed at music and entertainment events.</p>
+    </div>
+
+    <div class="achievement">
+        <h3>🎵 Music & Entertainment</h3>
+        <p>Created and shared Afrobeat, Afrosounds and Amapiano mixes.</p>
+    </div>
+
+    <div class="achievement">
+        <h3>⭐ Growing DJ Brand</h3>
+        <p>Building the DJ Prince brand and connecting with music lovers.</p>
+    </div>
+</section><section id="mission">
+    <h2>🎯 DJ Prince Mission</h2>
+
+    <div class="card">
+        <h3>🎧 Our Mission</h3>
+        <p>
+            To share great music, create positive entertainment,
+            and bring good vibes to every listener.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>🔥 Our Vision</h3>
+        <p>
+            To build DJ Prince into a creative and memorable
+            music brand.
+        </p>
+    </div>
+</section>
+<section id="why">
+    <h2>⭐ Why Choose DJ Prince?</h2>
+
+    <div class="card">
+        <h3>🎵 Great Music</h3>
+        <p>Enjoy exciting music and DJ mixes.</p>
+    </div>
+
+    <div class="card">
+        <h3>🔥 Good Vibes</h3>
+        <p>Music and entertainment designed to keep the energy going.</p>
+    </div>
+
+    <div class="card">
+        <h3>🎧 Passion for Music</h3>
+        <p>DJ Prince is built around creativity and a love for music.</p>
+    </div>
+</section>
+<section id="faq">
+    <h2>❓ DJ Prince FAQ</h2>
+
+    <div class="card">
+        <h3>🎧 What kind of music does DJ Prince play?</h3>
+        <p>Afrobeats, Naija sounds, Amapiano and other exciting music.</p>
+    </div>
+
+    <div class="card">
+        <h3>🎵 Can I listen to DJ Prince mixes?</h3>
+        <p>Yes. Visit the Music section and choose a track to play.</p>
+    </div>
+
+    <div class="card">
+        <h3>📅 Where can I see upcoming events?</h3>
+        <p>Visit the Events section for available event information.</p>
+    </div>
+</section>
+<section id="booking">
+    <h2>📅 Book DJ Prince</h2>
+
+    <div class="card">
+        <h3>🎧 Want DJ Prince at your event?</h3>
+
+        <p>
+            For event enquiries, contact DJ Prince
+            through the Contact section.
+        </p>
+
+        <a class="button" href="#contact">
+            📞 Contact DJ Prince
+        </a>
+    </div>
+</section>
+
+<section id="events">
+    <h2>📅 Upcoming Events</h2>
+
+    <div class="card">
+        <h3>🎧 DJ Prince Live</h3>
+        <p>📅 Date: Coming Soon</p>
+        <p>📍 Location: Coming Soon</p>
+        <p>🔥 Get ready for an amazing music experience!</p>
+    </div>
+
+    <div class="card">
+        <h3>🎵 DJ Prince Party</h3>
+        <p>📅 Date: Coming Soon</p>
+        <p>📍 Location: Coming Soon</p>
+        <p>🎶 Music • Entertainment • Good Vibes</p>
+    </div>
+</section>
+<section id="contact">
+    <section id="contact">
+    <h2>📞 Contact DJ Prince</h2>
+
+    <div class="card contact-card">
+        <h3>🎧 Get In Touch</h3>
+
+        <p>Want to contact DJ Prince?</p>
+
+        <p>📧 Email:dj: kalunnachi933gmail.com</p>
+
+        <p>🎵 Music • Entertainment • Good Vibes</p>
+
+        <p>📍 Location: Nigeria</p>
+    </div>
+</section>
+<section id="social">
+    <h2>🌐 Follow DJ Prince</h2>
+
+    <div class="card">
+        <p>🎵 Music</p>
+        <p>📸 Photos</p>
+        <p>🎧 DJ Updates</p>
+        <p>🔥 New Mixes Coming Soon</p>
+    </div>
+</section>
+
+
+<a class="button" href="#home">⬆️ Back to Top</a>
+<footer>
+    <h2>🎧 DJ PRINCE</h2>
+    <p>Music • Entertainment • Good Vibes</p>
+<p>🔥 Thanks for visiting DJ Prince!</p>
+
+<a class="button" href="#home">⬆️ Back to Top</a>
+
+    <p>🌐 Official Website: www.djprince.com</p>
+    <p>📧 Email: djprince@example.com</p>
+    <p>© 2026 DJ Prince. All Rights Reserved.</p>
+</footer><script>
+function startMusicSpin() {
+    document.querySelector(".music-cover").style.animationPlayState = "running";
+}
+
+function stopMusicSpin() {
+    document.querySelector(".music-cover").style.animationPlayState = "paused";
+}
+</script>
+</body>
+</html>
